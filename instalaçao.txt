@@ -1,0 +1,14 @@
+1. fazer repositório no git hub 
+2. criou do repositório o prjeto next js
+3. npx create-next-app@latest  [nome do repositório]
+
+2 durante a instalaçao, selecione as opçoes:
+typeScript
+Eslint
+TailWind css
+src directory
+app router
+import alias: @/*
+
+3. acessar o diretorio
+4.Inicia o servidor Http://localhost:3000 

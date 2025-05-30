@@ -1,9 +1,7 @@
-'use client';
-
 export default function ListaProdutos() {
   const products = [
     { id: 1, nome: 'Maçã', preco: 10 },
-    { id: 2, nome: 'Banana', preco: 5 },
+    { id: 2, nome: 'Banana', preco: 55 },
     { id: 3, nome: 'Goiaba', preco: 7 }
   ];
 
