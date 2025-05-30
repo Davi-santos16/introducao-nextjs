@@ -1,12 +1,8 @@
-// import Image from "next/image";
-import Wellcome from "@/components/wellcome";
-
+import NavBar from "@/components/NavBar";
 
 
 export default function Home() {
   return (
-    <div >
-      <Wellcome/>
-    </div>
+   <NavBar/>
   );
 }
