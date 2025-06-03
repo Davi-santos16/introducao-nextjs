@@ -6,7 +6,12 @@ export default function ServerExample(){
     const data = 'dados do bd'
         return(
             <div>
-                <NavBar/>
+                <NavBar links={
+                        [
+                          {label:"Inicio", href:"/"},
+                          {label:"Sobre", href:"/about"},
+                          {label:"Produtos", href:"/products"}
+                        ]}/>
                 <h1>dados do servidor</h1>
                 <p>{data}</p>
                 <ClientCounter/>
