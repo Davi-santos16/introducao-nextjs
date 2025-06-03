@@ -1,30 +1,44 @@
-import Image from "next/image"
+    import Image from "next/image";
+    interface NavBarProps{// quando uso interface é uma obrigaçao passar os valores na rederizaçao
+        links : {
+            label: string;
+            href: string;
+        }[]
+    }
 
-export default function NavBar(){
-    return(
-         <div className="">
+    export default function NavBar({links}:NavBarProps) {
 
-            {/* NavBar */}
+        return (
+            <nav className="bg-blue-200 shadow-sm">
+                <div className="px-4 mx-4">
+                    <div className="flex justify-between h-16 items-center">
 
-            
-            <nav className="bg-amber-50 shadow-sm">
-                <div className="px-4">
-                <div className="flex justify-between h-16 items-center">
-                    <div className="flex items-center">
-                    <Image src= "/nextjs-icon.svg" alt="dsdsd" width={40} height={40} className=""/>
-                    <span className="ml-2">NextApp</span>
+                        <div className="flex items-center">
+                            <Image
+                                src="/nextjs-icon.svg"
+                                alt="logo nextjs"
+                                width={45}
+                                height={45}
+                            />
+                            {/* <span className="ml-2 font-black">NextApp</span> */}
+                        </div>
+
+                        <div className="flex space-x-6">
+                            {
+                                links.map((link,indice)=>(
+                                    <a 
+                                    key={indice} 
+                                    href={link.href} 
+                                    className="hover:text-blue-900 text-lg font-bold">
+                                        {link.label}</a>
+                                ))
+                            }
+
+                        </div>
+
                     </div>
-
-                    <div className="flex space-x-6">
-                    <a className="text-lg font-medium hover:text-blue-800" href="">inicio</a>
-                    <a className="text-lg font-medium  hover:text-blue-800" href="">recursos</a>
-                    <a className="text-lg font-medium hover:text-blue-800" href="">contato</a>
-                    </div>
-
                 </div>
-                </div>
-            </nav>
-            
-            </div>
-    )
-}
+         </nav>
+
+        )
+    }
