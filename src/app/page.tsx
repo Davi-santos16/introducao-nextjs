@@ -11,7 +11,10 @@ export default function Home() {
           { label: "Sobre", href: "/about" },
           { label: "Produtos", href: "/products" }
         ]} />
-        <div className="flex justify-center">
+        <div className="flex justify-center m-10 font-bold">
+          <h1 className="text-3xl  ">Recurso principais</h1>
+        </div>
+        <div className="flex justify-center ">
           <Card
             img="🚀"
             Titulo="Emoji de Foguete"
