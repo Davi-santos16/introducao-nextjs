@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import NavBar from "@/components/NavBar";
+import PlaceForm from "@/components/PlaceForm";
 
 
 export default function Home() {
@@ -30,6 +31,10 @@ export default function Home() {
             Titulo="Emoji rindo"
             SubTitulo="slar"
           />
+        </div>
+        <div className="flex justify-center ">
+        <PlaceForm lat={22} lng={-23}/>
+
         </div>
         
        
