@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar"
+import  Button  from "@/components/Button"
 
 export default function About(){
     return(
@@ -12,6 +13,10 @@ export default function About(){
                     ]}/>
             <h1>Sobre nos</h1>
             <p>Informaçoes sobre a empresa</p>
+            <Button label='Click-me'/>
+            <Button label='Aperte'/>
+            <Button label='so olhe'/>
+            <Button label='la ele'/>
         </div>
     )
 }
