@@ -32,10 +32,7 @@ export default function Home() {
             SubTitulo="slar"
           />
         </div>
-        <div className="flex justify-center ">
-        <PlaceForm lat={22} lng={-23}/>
-
-        </div>
+        
         
        
     </div >
