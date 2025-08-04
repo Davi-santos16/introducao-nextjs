@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from "react"
 
+
 export default function Dogs() {
     const [dogImage, setDogImage] = useState<string | null>(null)
     
@@ -33,6 +34,11 @@ export default function Dogs() {
             >
                 Buscar Outro Cachorro
             </button>
+
+         
+            
+
+
         </div>
     )
 }
