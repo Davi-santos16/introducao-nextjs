@@ -64,7 +64,7 @@ export default function ServerExample(){
                 <ClientCounter/>
 
                 <div className=" mt-2 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 ">
-                {DadosCard.map((produto) =>(<Card key={produto.id} Description={produto.Description} Title={produto.Title} category={produto.category} ImageUrl={produto.ImageUrl} />))}
+                    {DadosCard.map((produto) =>(<Card key={produto.id} Description={produto.Description} Title={produto.Title} category={produto.category} ImageUrl={produto.ImageUrl} />))}
                 </div> 
             </div>
 
