@@ -63,8 +63,8 @@ export default function ServerExample(){
                 <p>{data}</p>
                 <ClientCounter/>
 
-                <div className="flex gap-2">
-                {DadosCard.map((produto) =>(<Card key={produto.id} Description={produto.Description} Title={produto.Title} category={produto.category} ImageUrl={produto.ImageUrl} />))}
+                <div className=" mt-2 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 ">
+                    {DadosCard.map((produto) =>(<Card key={produto.id} Description={produto.Description} Title={produto.Title} category={produto.category} ImageUrl={produto.ImageUrl} />))}
                 </div> 
             </div>
 
