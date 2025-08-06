@@ -1,9 +1,30 @@
+"use client"
 import Card from "@/components/Card";
 import NavBar from "@/components/NavBar";
-import PlaceForm from "@/components/PlaceForm";
+import CommentForm from "@/components/CommentForm";
+import  {CommentList}  from "@/components/CommentList";
+import { useState } from "react"
+
+type Comentario = {
+  nome: string;
+  mensagem: string;
+  data: Date;
+};
 
 
 export default function Home() {
+    const [comentarios, setComentarios] = useState<Comentario[]>([]);
+
+    function handleAddComment(nome: string, mensagem: string) {
+    const novoComentario = {
+      nome,
+      mensagem,
+      data: new Date(),
+    };
+    setComentarios((prev) => [...prev, novoComentario]);
+  }
+
+
   return (
     <div className="">
       <NavBar links={
@@ -32,6 +53,17 @@ export default function Home() {
             SubTitulo="slar"
           />
         </div>
+        <div >
+          <h1 className="text-white mb-4">Deixe seu comentário</h1>
+          <CommentForm onAddComment={handleAddComment} />
+          <div className="mt-3 ">
+            <h2 className="text-black mb-2 text-2xl text-center">Comentários:</h2>
+            <div className="flex justify-center">
+            <CommentList comentarios={comentarios} />
+
+            </div>
+        </div>
+    </div>
         
         
        
