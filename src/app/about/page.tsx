@@ -1,12 +1,13 @@
 import NavBar from "@/components/NavBar"
 import  Button  from "@/components/Button"
 import { Counter } from "@/components/Counter"
+import { CounterLike } from "@/components/CounterLike"
 
 export default function About(){
 
     return(
 
-        <div>
+        <div className="flex justify-center">
             {/* <NavBar links={
                     [
                       {label:"Inicio", href:"/"},
@@ -19,7 +20,8 @@ export default function About(){
             <Button label='Aperte'/>
             <Button label='so olhe'/>
             <Button label='la ele'/> */}
-            <Counter initial={2}/>
+            {/* <Counter initial={0}/> */}
+            <CounterLike initial={0}/>
         </div>
     )
 }
