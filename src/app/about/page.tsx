@@ -1,7 +1,6 @@
-import NavBar from "@/components/NavBar"
-import  Button  from "@/components/Button"
-import { Counter } from "@/components/Counter"
+
 import { CounterLike } from "@/components/CounterLike"
+import Lampada from "@/components/Lampada"
 
 export default function About(){
 
@@ -21,7 +20,8 @@ export default function About(){
             <Button label='so olhe'/>
             <Button label='la ele'/> */}
             {/* <Counter initial={0}/> */}
-            <CounterLike initial={0}/>
+            {/* <CounterLike initial={0}/> */}
+            <Lampada/>
         </div>
     )
 }
