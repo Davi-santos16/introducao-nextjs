@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import CommentForm from "@/components/CommentForm";
 import  {CommentList}  from "@/components/CommentList";
 import { useState } from "react"
+import EffectCounter from "@/components/EffectCounter";
 
 type Comentario = {
   nome: string;
@@ -63,6 +64,8 @@ export default function Home() {
 
             </div>
         </div>
+
+        <EffectCounter/>
     </div>
         
         
