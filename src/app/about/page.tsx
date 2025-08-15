@@ -1,4 +1,5 @@
 
+import Calculadora from "@/components/Calculadora"
 import { CounterLike } from "@/components/CounterLike"
 import Lampada from "@/components/Lampada"
 import MiniDisplay from "@/components/MiniDisplay"
@@ -23,7 +24,8 @@ export default function About(){
             {/* <Counter initial={0}/> */}
             {/* <CounterLike initial={0}/> */}
             {/* <Lampada/> */}
-            <MiniDisplay/>
+            {/* <MiniDisplay/> */}
+            <Calculadora/>
         </div>
     )
 }
