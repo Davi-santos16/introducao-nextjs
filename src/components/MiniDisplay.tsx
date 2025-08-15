@@ -77,8 +77,7 @@ export default function MiniDisplay() {
 
       {/* teclado */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-5 w-40 h-40 ">
-        <button
-          onClick={() => {
+        <button onClick={() => {
             setDisplay(display + "0");
           }}
           className="bg-blue-300 p-2 rounded"
