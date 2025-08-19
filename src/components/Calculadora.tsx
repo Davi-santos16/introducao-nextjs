@@ -52,8 +52,20 @@ export default function Calculadora() {
 
     function Dividir(){
         const values = display.split("/") 
+
         const numberValues = values.map((value)=>Number(value))
 
+        if(numberValues[0] === 0){
+          setDisplay('0')
+          return 0
+        }
+        
+        if(numberValues.includes(0)){
+          setDisplay('Divisao por 0 ')
+          return
+        }
+
+        
         const result = numberValues.reduce(
             (acumuladora, valorAtual) => acumuladora / valorAtual
             
