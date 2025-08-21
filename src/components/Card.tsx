@@ -1,5 +1,3 @@
-
-
 interface CardProps {
   img: string;
   Titulo: string;
@@ -17,4 +15,3 @@ export default function Card({ img, Titulo, SubTitulo }: CardProps) {
     </div>
   );
 }
-    
