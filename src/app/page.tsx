@@ -66,10 +66,17 @@ export default function Home() {
         </div>
 
         <EffectCounter/>
+        <div>
+          <div>
+            apenas testando
+          </div>
+        </div>
+
+        
     </div>
         
         
        
-    </div >
-  );
+   </div > 
+   );
 }
