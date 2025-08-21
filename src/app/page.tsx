@@ -37,7 +37,7 @@ export default function Home() {
         <div className="flex justify-center m-10 font-bold">
           <h1 className="text-3xl  ">Recurso principais</h1>
         </div>
-        <div className="flex justify-center ">
+        <div className="flex justify-center items-center ">
           <Card
             img="🚀"
             Titulo="Emoji de Foguete"
@@ -68,12 +68,10 @@ export default function Home() {
         <EffectCounter/>
     </div>
 
-    <div><div>
-      
-      teste</div></div>
+   
         
         
        
-    </div >
-  );
+       
+       </div >);
 }
