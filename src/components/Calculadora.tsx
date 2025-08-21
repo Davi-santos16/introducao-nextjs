@@ -7,6 +7,23 @@ import { useState } from "react";
 export default function Calculadora() {
     const [display, setDisplay] = useState("");
 
+    const handleOperationClick = (operador:string) =>{
+      const operadores = ['+','-','X','/']
+
+      const disableOperators = operadores.filter((op)=>{
+       return op !==operador
+      })
+
+      const hasAnotherOperator = disableOperators.some(
+        (op) => display.includes(op)
+      )
+      if (hasAnotherOperator) return
+
+      setDisplay(display + operador)
+      
+
+    }
+
     const apaga = () => {
         setDisplay(display.slice(0, -1));
     };
@@ -198,7 +215,7 @@ export default function Calculadora() {
 
         <button
           onClick={() => {
-            setDisplay(display + "+");
+            handleOperationClick("+")
           }}
           className="bg-blue-400 p-2 flex items-center justify-center"
         >
@@ -207,7 +224,7 @@ export default function Calculadora() {
 
         <button
           onClick={() => {
-            setDisplay(display + "-");
+            handleOperationClick("-")
           }}
           className="bg-blue-400 p-2 flex items-center justify-center"
         >
@@ -216,7 +233,7 @@ export default function Calculadora() {
 
          <button
           onClick={() => {
-            setDisplay(display + "X");
+            handleOperationClick("X")
           }}
           className="bg-blue-400 p-2 flex items-center justify-center"
         >
@@ -225,7 +242,7 @@ export default function Calculadora() {
 
         <button
           onClick={() => {
-            setDisplay(display + "/");
+            handleOperationClick("/")
           }}
           className="bg-blue-400 p-2 flex items-center justify-center"
         >
