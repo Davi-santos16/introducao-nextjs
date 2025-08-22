@@ -1,3 +1,4 @@
+import BotaoReproducao from "@/components/BotaoReproducao"
 import { LikeButton } from "@/components/LikeButton"
 
 
@@ -19,8 +20,15 @@ export default function Filter(){
     console.log(resultado)
 
     return(
-        <div className="flex justify-center ">
-            <LikeButton/>
+        <div className="flex-col justify-center items-center gap-20 align-baseline">
+            <div className="flex justify-center gap-10">
+                   <LikeButton/>
+                <BotaoReproducao/>
+
+            </div>
+             
+            
+           
 
 
         </div>
