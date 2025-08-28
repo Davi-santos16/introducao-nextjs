@@ -2,13 +2,14 @@
 import Calculadora from "@/components/Calculadora"
 import { CounterLike } from "@/components/CounterLike"
 import Lampada from "@/components/Lampada"
+import { ListaDeCompras } from "@/components/ListaDeCompras"
 import MiniDisplay from "@/components/MiniDisplay"
 
 export default function About(){
 
     return(
 
-        <div>
+        <div className="flex justify-center">
             {/* <NavBar links={
                     [
                       {label:"Inicio", href:"/"},
@@ -25,7 +26,8 @@ export default function About(){
             {/* <CounterLike initial={0}/> */}
             {/* <Lampada/> */}
             {/* <MiniDisplay/> */}
-            <Calculadora/>
+            {/* <Calculadora/> */}
+            <ListaDeCompras />
         </div>
     )
 }
