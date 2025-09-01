@@ -1,15 +1,17 @@
 
 import Calculadora from "@/components/Calculadora"
 import { CounterLike } from "@/components/CounterLike"
+import FeedPage from "@/components/FeedPage"
 import Lampada from "@/components/Lampada"
 import { ListaDeCompras } from "@/components/ListaDeCompras"
 import MiniDisplay from "@/components/MiniDisplay"
+import PostCard from "@/components/PostCard"
 
 export default function About(){
 
     return(
 
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
             {/* <NavBar links={
                     [
                       {label:"Inicio", href:"/"},
@@ -27,7 +29,8 @@ export default function About(){
             {/* <Lampada/> */}
             {/* <MiniDisplay/> */}
             {/* <Calculadora/> */}
-            <ListaDeCompras />
+            {/* <ListaDeCompras /> */}
+            <FeedPage/>
         </div>
     )
 }
